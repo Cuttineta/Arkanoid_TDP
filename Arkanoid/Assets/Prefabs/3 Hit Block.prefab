@@ -125,4 +125,11 @@ MonoBehaviour:
   hitSprites:
   - {fileID: 21300000, guid: 2420285f7bd7c7a40ae23d530566c075, type: 3}
   - {fileID: 21300000, guid: 97ba645a19fc94a41849ad95cb42728b, type: 3}
-  points: 10
+  puntos: 10
+  BigPaddle: {fileID: 131502316005663785, guid: 90c38a8e1b66d534b8a79965232e351c,
+    type: 3}
+  CienPuntos: {fileID: 1844073174441091272, guid: 98f7276dda3feac4b82ad71aad747f20,
+    type: 3}
+  CincuentaPuntos: {fileID: 8574678904664879090, guid: e0d6f343d5403c54db39ca575cad9bba,
+    type: 3}
+  PowerUp: 0

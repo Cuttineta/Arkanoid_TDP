@@ -21,14 +21,21 @@ public class Nivel : MonoBehaviour
     /*
      * Disminuye la cantidad de bloques que hay en el nivel.
      * Si no hay mas bloques para destruir, se carga la sig
-     * escena
+     * escena o se termina el juego (el jugador gana)
      */
     public void DestruirBloque()
     {
         bloquesActuales--;
         if (bloquesActuales <= 0)
         {
-            sceneloader.LoadNextScene();
+            if (tag == "UltimoNivel")
+            {
+                sceneloader.LoadWinGame();
+            }
+            else
+            {
+                sceneloader.LoadNextScene();
+            }
         }
     }
 }

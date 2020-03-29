@@ -98,6 +98,12 @@ MonoBehaviour:
   sonido: {fileID: 8300000, guid: ab4aa53c1fd23234d949c43813a017a3, type: 3}
   hitSprites: []
   puntos: 10
+  BigPaddle: {fileID: 131502316005663785, guid: 90c38a8e1b66d534b8a79965232e351c,
+    type: 3}
+  CienPuntos: {fileID: 1844073174441091272, guid: 98f7276dda3feac4b82ad71aad747f20,
+    type: 3}
+  CincuentaPuntos: {fileID: 8574678904664879090, guid: e0d6f343d5403c54db39ca575cad9bba,
+    type: 3}
 --- !u!60 &4400321853667462509
 PolygonCollider2D:
   m_ObjectHideFlags: 0

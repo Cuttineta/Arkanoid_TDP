@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bloque : MonoBehaviour
 {
@@ -33,10 +31,11 @@ public class Bloque : MonoBehaviour
             RecibirGolpe();
         }
     }
+
     /*
-     * Reproduce el sonido correspondiente, destruye el objeto de juego y añade los puntos
-     * al puntaje del juego
-     */
+* Reproduce el sonido correspondiente, destruye el objeto de juego y añade los puntos
+* al puntaje del juego
+*/
     private void BloqueDestruido()
     {
         AudioSource.PlayClipAtPoint(sonido, Camera.main.transform.position);
