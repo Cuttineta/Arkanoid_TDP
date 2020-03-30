@@ -8,9 +8,11 @@ public class GameStatus : MonoBehaviour
 	//Parametros de configuracion
 	[Range(0.1f,10f)][SerializeField] float gameSpeed=1f;
 	[SerializeField] TextMeshProUGUI scoreText = null;
+	[SerializeField] TextMeshProUGUI nivelText = null;
 
 
 	int currentScore = 0;
+	int currentLevel = 1;
 
 	/*
 	 * Awake() obtiene la cantidad de instancias de GameStatus (sesion de juego donde
@@ -36,6 +38,7 @@ public class GameStatus : MonoBehaviour
 	private void Start()
 	{
 		scoreText.text = "Score: "+ currentScore.ToString();
+		nivelText.text = "Nivel " + currentLevel.ToString();
 			
 	}
 
@@ -53,9 +56,19 @@ public class GameStatus : MonoBehaviour
 	{
 		currentScore += points;
 		scoreText.text = "Score: " + currentScore.ToString();
-
-
 	}
+
+	public void UpdateLevel()
+	{
+		currentLevel++;
+		nivelText.text = "Nivel " + currentLevel.ToString();
+	}
+
+	public void GameOver()
+	{
+		nivelText = null;
+	}
+
 	/*
 	 * Destruye la instancia de la clase y resetea el puntaje del juego
 	 */

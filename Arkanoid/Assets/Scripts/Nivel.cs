@@ -7,10 +7,12 @@ public class Nivel : MonoBehaviour
     [SerializeField] int bloquesActuales=0;
 
     SceneLoader sceneloader;
+    GameStatus gameStatus;
 
     private void Start()
     {
         sceneloader = FindObjectOfType<SceneLoader>();
+        gameStatus = FindObjectOfType<GameStatus>();
     }
 
     public void AumentarBloques()
@@ -31,11 +33,14 @@ public class Nivel : MonoBehaviour
             if (tag == "UltimoNivel")
             {
                 sceneloader.LoadWinGame();
+                gameStatus.GameOver();
             }
             else
             {
                 sceneloader.LoadNextScene();
+                gameStatus.UpdateLevel();
             }
+            
         }
     }
 }
