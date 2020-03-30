@@ -10,6 +10,8 @@ ScriptsOnlyBuild:
     - SceneLoader
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -740,7 +742,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: ca85b1e0b5332eedd73dcae1b53b964c
+      Hash: 6f2126b867e042011431c92cae9dc1cb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameStatus
@@ -939,4 +941,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Game Over.unity
   - Assets/Scenes/Info Scene.unity
   - Assets/Scenes/Win Game.unity
-  playerPath: C:/Users/joaco/OneDrive/Documentos/GitHub/Arkanoid_TDP/Arkanoid/arkanoid.apk
+  playerPath: C:/Users/joaco/OneDrive/Documentos/GitHub/Arkanoid_TDP/Arkanoid/Apk/arkanoid.apk
